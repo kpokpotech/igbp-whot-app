@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ig">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="kpokpotech" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igbo Whot - kpokpotech</title>
+  </head>
+  <body oncontextmenu="return false">
+    <div id="root"></div>
+    <script>
+      // Very weak anti-copy gesture—don’t rely on this
+      document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && ['s','u','p','c'].includes(e.key.toLowerCase())) e.preventDefault();
+      });
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
