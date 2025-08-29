@@ -1,14 +1,17 @@
 {
-  "name": "backend",
+  "name": "igbo-whot-backend",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "author": "kpokpotech",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "node src/server.js",
+    "start": "NODE_ENV=production node src/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.2.0"
+  }
 }
